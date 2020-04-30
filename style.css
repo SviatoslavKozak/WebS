@@ -1,0 +1,649 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.logo {
+    width: 100%;
+    height: 188px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+}
+.logo i {
+    margin: 70px 20px 0 0 ;
+    font-size: 80px;
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo p {
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 80px;
+    margin: 55px 0 0 0;
+    font-weight: 900;
+    background: linear-gradient(green, red);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+.info_panel {
+    width: 100%;
+    height: 123px;
+    transition: 2s;
+    display: flex;
+}
+.search {
+    width: 22%;
+    height: 123px;
+}
+.search form {
+    width: 90%;
+    margin: 50px auto 0 auto;
+}
+.search input {
+    margin: 0;
+    padding: 5px;
+    border-radius: 20px;
+}
+.search button {
+    margin: 0;
+}
+.menu {
+    display: flex;
+    width: 56%;
+    height: 123px;
+}
+.menu ul {
+    list-style-type: none;
+    /*height: auto;*/
+    padding: 0;
+    margin: auto;
+    justify-content: center;
+}
+.menu li {
+    position: relative;
+    float: right;
+    height: 70px;
+    padding-top: 50px;
+}
+
+.menu_item {
+    text-decoration: none;
+    color: #80333a;
+    margin-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.menu2 {
+    margin-top: 50px;
+    display: none;
+    list-style-type: none;
+    background-color: #709fb2;
+    height: auto;
+    width: 300px;
+    z-index: 2;
+}
+.menu2 li {
+    height: 60px;
+    margin: 0 10% 0 10%;
+    padding: 0;
+    width: 80%;
+    position: relative;
+    border-top: 1px solid #0B2349;
+}
+.menu2 li:nth-of-type(1) {
+    border: none;
+}
+.menu2 a {
+    position: absolute;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.add_menu:hover .menu2{
+    display: block;
+    position: absolute;
+    top: 122px;
+}
+
+.menu a:hover{
+    border-bottom: 3px solid #0D61BC;
+}
+.menu2 a:hover {
+    border: none;
+    color: black;
+}
+.contacts {
+    display: flex;
+    width: 22%;
+    height: 123px;
+    justify-content: center;
+}
+.contacts a {
+    width: 40px;
+    height: 50px;
+    margin: 45px 10px 0 30px;
+}
+.contacts a:nth-of-type(4) {
+    margin-right: 40px;
+}
+.contacts i {
+    font-size: 30px;
+    transition: 0.8s;
+}
+.facebook {
+    color: blue;
+}
+.twitter {
+    color: #3498db;
+}
+.instagram {
+    background: linear-gradient(45deg, yellow 33%, red 66%, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mail {
+    color: red;
+}
+.contacts i:hover {
+    transform: scale(1.3);
+}
+.button {
+    text-decoration: none;
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    margin:  auto;
+    margin-left: 0;
+    margin-right: 40px;
+}
+.button:hover {
+    background-image: none;
+    background-color: black;
+}
+.button p {
+    color: white;
+    width: 80%;
+    margin: 10px 0 0 18px;
+}
+.all_slider {
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+}
+.infinity-slider-wrap {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.infinity-slider {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+.infinity-slider img {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+.infinity-slider .opacity0 {
+    opacity: 0;
+}
+.btn {
+    opacity: 1;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+.two_blocks {
+    width: 100%;
+    height: 160px;
+}
+.title {
+    text-align: center;
+}
+.title p {
+    font-size: 35px;
+    margin: 0;
+    padding-top: 100px ;
+}
+.line {
+    width: 100%;
+    height: 4px;
+}
+.black_line {
+    height: 4px;
+    width: 60px;
+    background-color: black;
+    /*margin-left: 720px;*/
+    margin: auto;
+}
+.all_window {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.window {
+    height: 450px;
+    width: 30%;
+    margin: auto;
+    margin-top: 60px;
+}
+.head_window {
+    height: 25%;
+    background-color: #8AA9D6;
+    width: 100%;
+}
+.head_window a {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.head_window:hover a {
+    color: black;
+}
+.window img {
+    width: 100%;
+    height: 75%;
+}
+.lonely_button {
+    width: 100%;
+    height: 140px;
+    text-align: center;
+}
+.lonely_button a {
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    width: auto;
+    margin: 0 auto;
+    padding: 16px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.lonely_button a:hover {
+    background-image: none;
+    background-color: grey;
+}
+.hot_tours {
+    width: 100%;
+    height: 1200px;
+    font-weight: 900;
+}
+.hot_tours h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+.tour_and_cost {
+    width: 80%;
+    height: 350px;
+    display: flex;
+    margin: 50px auto;
+    border: 1px solid grey;
+    transition: 0.8s;
+}
+.tour_and_cost img {
+    width: 50%;
+    height: 350px;
+    transition: 0.8s;
+}
+.tour_info {
+    width: 100%;
+    height: 350px;
+}
+.text_info {
+    position: relative;
+    margin: 30px;
+    height: 100%;
+}
+.text_info a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    opacity: 0.7;
+}
+.text_info a:nth-of-type(2) {
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 20px;
+    border: 3px solid black;
+    transition: 0.7s;
+}
+.text_info a:hover {
+    background-color: #0D61BC;
+}
+.text_info p {
+    opacity: 0.5;
+    color: grey;
+    padding-bottom: 40px;
+}
+.flex {
+    position: absolute;
+    bottom: 0;
+    color: #13cc9c;
+    font-size: 25px;
+}
+.stars {
+    display: flex;
+}
+.stars i {
+    color: #ffc500;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.four_blocks {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+}
+.two_info_blocks {
+    width: 45%;
+    height: 1200px;
+    margin: 50px auto auto auto;
+}
+.one_side {
+    width: 100%;
+    height: 46%;
+    text-align: center;
+}
+.images img {
+    height: 450px;
+    width: 100%;
+    margin: auto;
+}
+.touch_text {
+    height: 50px;
+    margin: 30px 0 0 0;
+}
+.touch_text a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+.touch_text a:hover {
+    color: #26acb2;
+}
+#about_us{
+    width: 100%;
+    height: 300px;
+}
+#about_us h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    opacity: 0.8;
+}
+#about_us p {
+    width: 70%;
+    margin: auto;
+    font-size: 30px;
+    opacity: 0.6;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.bottom {
+    width: 100%;
+    height: 80px;
+    background-color: #298485;
+}
+.bottom p {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 30px;
+    color: white;
+    margin: 0;
+}
+@media only screen and (max-width: 768px) {
+    .logo i{
+        font-size: 60px;
+    }
+    .logo p {
+        font-size: 60px;
+    }
+    .search {
+        width: 50%;
+    }
+    .menu {
+        display: none;
+    }
+    .contacts {
+        display: flex;
+        width: 50%;
+    }
+    .contacts a {
+        margin: 40px 0 0 40px;
+        padding: 0;
+    }
+    .contacts i {
+        font-size: 30px;
+    }
+    .all_slider {
+        height: 600px;
+    }
+    .infinity-slider-wrap {
+        height: 600px;
+    }
+    .infinity-slider {
+        height: 600px;
+    }
+    .infinity-slider img {
+        height: 600px;
+    }
+    .two_blocks {
+        height: 80px;
+    }
+    .title p {
+        font-size: 20px;
+        margin: 0;
+        padding-top: 80px ;
+    }
+    .line {
+        height: 2px;
+    }
+    .black_line {
+        height: 2px;
+        width: 60px;
+        background-color: black;
+        margin: auto;
+    }
+    .all_window {
+        height: 300px;
+    }
+    .window {
+        height: 250px;
+        margin-top: 30px;
+    }
+    .head_window a {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .head_window:hover a {
+        color: black;
+    }
+    .window img {
+        width: 100%;
+        height: 75%;
+    }
+    .flex {
+        display: flex;
+    }
+    .four_blocks {
+        height: 800px;
+    }
+    .two_info_blocks {
+        height: 800px;
+    }
+    .images img {
+        height: 300px;
+    }
+    .touch_text a {
+        font-size: 16px;
+    }
+    #about_us {
+        height: 200px;
+    }
+    #about_us h1{
+        font-size: 25px;
+    }
+    #about_us p {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .logo {
+        height: 120px;
+    }
+    .logo i{
+        font-size: 40px;
+    }
+    .logo p {
+        font-size: 40px;
+    }
+    .search input {
+        width: 60%;
+    }
+    .contacts {
+        display: flex;
+        width: 50%;
+    }
+    .contacts a {
+        margin: 50px 0 0 40px;
+        padding: 0;
+    }
+    .contacts i {
+        font-size: 20px;
+    }
+    .all_slider {
+        height: 400px;
+    }
+    .infinity-slider-wrap {
+        height: 400px;
+    }
+    .infinity-slider {
+        height: 400px;
+    }
+    .infinity-slider img {
+        height: 400px;
+    }
+    .title p {
+        font-size: 18px;
+        padding-top: 40px ;
+    }
+    .all_window {
+        height: 260px;
+    }
+    .window {
+        height: 200px;
+        margin-top: 20px;
+    }
+    .head_window a {
+        padding-top: 20px;
+        font-size: 12px;
+    }
+    .hot_tours {
+        width: 100%;
+        height: 700px;
+        font-weight: 900;
+    }
+    .hot_tours h1 {
+        text-align: center;
+        font-size: 20px;
+        margin: 0;
+    }
+    .tour_and_cost {
+        width: 80%;
+        height: 200px;
+        display: flex;
+        margin: 20px auto;
+        border: 1px solid grey;
+        transition: 0.8s;
+    }
+    .tour_and_cost img {
+        width: 50%;
+        height: 200px;
+        transition: 0.8s;
+    }
+    .tour_info {
+        width: 100%;
+        height: 200px;
+    }
+    .text_info {
+        position: relative;
+        margin: 10px;
+        height: 100%;
+    }
+    .text_info a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        opacity: 0.7;
+    }
+    .text_info a:nth-of-type(2) {
+        font-size: 14px;
+        margin-top: 15px;
+        padding: 10px;
+        border: 1px solid black;
+        transition: 0.7s;
+    }
+    .text_info a:hover {
+        background-color: #0D61BC;
+    }
+    .text_info p {
+        opacity: 0.5;
+        color: grey;
+        padding-bottom: 20px;
+        font-size: 10px;
+    }
+    .stars i {
+        color: #ffc500;
+        margin-right: 10px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    .four_blocks {
+        height: 580px;
+    }
+    .two_info_blocks {
+        height: 540px;
+        margin-top: 20px;
+    }
+    .one_side {
+        height: 260px;
+    }
+    .images img {
+        height: 200px;
+    }
+    .touch_text {
+        margin: 10px 0 0 0;
+    }
+    .touch_text a {
+        font-size: 12px;
+    }
+    #about_us {
+        height: 160px;
+    }
+    #about_us h1{
+        font-size: 16px;
+    }
+    #about_us p {
+        font-size: 14px;
+    }
+    .bottom {
+        height: 60px;
+    }
+    .bottom p {
+        padding-top: 18px;
+    }
+
+}
